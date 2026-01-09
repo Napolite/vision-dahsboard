@@ -6,7 +6,7 @@ import { AiFillTool } from "react-icons/ai";
 function SideBar() {
   const [selected, setSelected] = useState("dash");
   return (
-    <div className="from-[#060b26] from-[0%] to-[#1a1f37] to-[100%] bg-gradient-to-r min-h-[100vh] w-[264px] rounded-t-[30px] text-white flex flex-col items-center ml-[5px] mt-[5px]">
+    <div className="from-[#060b26] from-[0%] to-[#1a1f37] to-[100%] bg-gradient-to-r max-h-[100vh] w-[264px] rounded-t-[30px] text-white flex flex-col items-center ml-[5px] mt-[5px]">
       <div className="h-[50px] mb-[70px] text-center flex place-items-center w-full justify-center">
         Vision UI Free
       </div>

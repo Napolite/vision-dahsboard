@@ -2,7 +2,7 @@ function ProgressBar({
   width,
   progress,
 }: {
-  width: number;
+  width: number | string;
   progress: number | string;
 }) {
   return (
