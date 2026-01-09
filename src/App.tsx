@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex">
       <SideBar />
-      <div>
+      <div className="flex-1">
         <Navbar />
       </div>
     </div>
