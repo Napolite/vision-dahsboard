@@ -1,30 +1,55 @@
-function Circular({ progress = 0.85 }) {
-  const radius = 185;
+function Circular({
+  size = 240,
+  progress = 0.6,
+  strokeWidth = 20,
+  fill1 = "#0075FF",
+  fill2 = "#0075FF00",
+}) {
+  const center = size / 2;
+  const radius = center - strokeWidth / 2;
   const circumference = 2 * Math.PI * radius;
-
   const offset = circumference * (1 - progress);
 
   return (
-    <div className="w-[400px] h-[400px] flex items-center justify-center relative">
-      <svg width="400" height="400" className="absolute">
+    <div
+      className="relative flex items-center justify-center"
+      style={{ width: size, height: size }}
+    >
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        className="absolute"
+      >
         <defs>
           <linearGradient id="linearg">
-            <stop offset="0%" stopColor="darkorange" />
-            <stop offset="100%" stopColor="yellow" />
+            <stop offset="0%" stopColor={fill1} />
+            <stop offset="100%" stopColor={fill2} />
           </linearGradient>
         </defs>
 
+        {/* Track */}
         <circle
-          cx="200"
-          cy="200"
+          cx={center}
+          cy={center}
+          r={radius}
+          fill="none"
+          stroke="#3f3f46"
+          strokeWidth={strokeWidth}
+        />
+
+        {/* Progress */}
+        <circle
+          cx={center}
+          cy={center}
           r={radius}
           fill="none"
           stroke="url(#linearg)"
-          strokeWidth="30"
+          strokeWidth={strokeWidth}
           strokeLinecap="round"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
-          transform="rotate(90 200 200)"
+          transform={`rotate(90 ${center} ${center})`}
           className="transition-all duration-700 ease-out"
         />
       </svg>

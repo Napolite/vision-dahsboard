@@ -1,7 +1,6 @@
 import Tablet from "../../components/ui-comp/dashboard-ui/tab";
 import { FaWallet, FaUsers, FaUserPlus, FaShoppingCart } from "react-icons/fa";
 import UserInfo from "./userInfo";
-import Circular from "../../components/c-progress/circular-bar";
 
 export const stats = [
   {
@@ -33,7 +32,7 @@ export const stats = [
 function Dashboard() {
   return (
     <div className="pt-[30px] px-[30px]">
-      {/* <div className="grid grid-cols-4 w-full gap-x-[24px]">
+      <div className="grid grid-cols-4 w-full gap-x-[24px]">
         {stats.map((stat) => (
           <Tablet
             header={stat?.header}
@@ -45,8 +44,7 @@ function Dashboard() {
       </div>
       <div className="mt-[40px]">
         <UserInfo />
-      </div> */}
-      <Circular />
+      </div>
     </div>
   );
 }
