@@ -29,9 +29,10 @@ const StackedAreaChart = () => {
     <AreaChart
       style={{
         width: "100%",
-        maxWidth: "700px",
-        maxHeight: "70vh",
+        maxWidth: "100%",
+        maxHeight: "296.5px",
         aspectRatio: 1.618,
+        fontSize: 10,
       }}
       responsive
       data={data}
@@ -50,15 +51,15 @@ const StackedAreaChart = () => {
         type="monotone"
         dataKey="uv"
         stackId="1"
-        stroke="#8884d8"
-        fill="#8884d8"
+        stroke="#0075FF"
+        fill="#0075FF"
       />
       <Area
         type="monotone"
         dataKey="pv"
         stackId="1"
-        stroke="#82ca9d"
-        fill="#82ca9d"
+        stroke="#2CD9FF"
+        fill="#2CD9FF36"
       />
     </AreaChart>
   );

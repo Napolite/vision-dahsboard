@@ -1,10 +1,9 @@
-import React from "react";
-import SimpleAreaChart from "../../components/ui-comp/dashboard-ui/graph";
+import SalesOverview from "../../components/ui-comp/dashboard-ui/sales-overview";
 
 function Charts() {
   return (
-    <div>
-      <SimpleAreaChart />
+    <div className="mt-[30px]">
+      <SalesOverview />
     </div>
   );
 }
