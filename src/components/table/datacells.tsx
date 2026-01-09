@@ -3,7 +3,12 @@ function DataCells({ data }: { data: any }) {
   return (
     <div className="flex w-[100%] border-b-[1px] border-b-solid border-b-[#56577A] py-[20px]">
       {data?.map((dat: any) => (
-        <div style={{ width: dat?.width }}>{dat?.label || dat?.value}</div>
+        <div
+          className="text-[14px] font-bold text-[#ffffff]"
+          style={{ width: dat?.width }}
+        >
+          {dat?.label || dat?.value}
+        </div>
       ))}
     </div>
   );
