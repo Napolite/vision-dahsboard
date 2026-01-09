@@ -1,12 +1,4 @@
-import {
-  BarChart,
-  Legend,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Bar,
-} from "recharts";
+import { BarChart, YAxis, Bar } from "recharts";
 
 // #region Sample data
 const data = [
@@ -52,8 +44,8 @@ const BarChartExample = ({ isAnimationActive = true }) => (
   <BarChart
     style={{
       width: "100%",
-      maxWidth: "700px",
-      maxHeight: "70vh",
+      maxWidth: "620px",
+      maxHeight: "200px",
       aspectRatio: 1.618,
     }}
     responsive

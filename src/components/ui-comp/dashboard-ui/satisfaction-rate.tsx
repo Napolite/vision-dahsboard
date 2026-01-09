@@ -2,7 +2,7 @@ import Circular from "../../c-progress/circular-bar";
 
 function SatisfactionRate() {
   return (
-    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b2694] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-br py-[20px] px-[20px] w-[350px] backdrop-blur-lg h-[344px]">
+    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b26] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-b py-[20px] px-[20px] w-[350px] backdrop-blur-lg h-[344px]">
       <div className="self-start">
         <div className="text-[#ffffff] text-[18px] font-bold">
           Satisfaction Rate

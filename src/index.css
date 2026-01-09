@@ -7,6 +7,7 @@
 } */
 body {
   background: linear-gradient(#0f123b 0%, #090d2e 59%, #020515 100%);
+  background-image: url("./assets/Background\ \(2\).png");
   background-repeat: no-repeat;
   min-height: 100vh;
 }
