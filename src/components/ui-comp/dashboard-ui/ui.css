@@ -1,0 +1,6 @@
+.this-bg-thing {
+  background-image: url("../../../assets/background.png");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

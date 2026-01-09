@@ -1,6 +1,6 @@
-import Tablet from "../components/ui-comp/tab";
-
+import Tablet from "../../components/ui-comp/dashboard-ui/tab";
 import { FaWallet, FaUsers, FaUserPlus, FaShoppingCart } from "react-icons/fa";
+import UserInfo from "./userInfo";
 
 export const stats = [
   {
@@ -42,7 +42,9 @@ function Dashboard() {
           />
         ))}
       </div>
-      <div></div>
+      <div className="mt-[40px]">
+        <UserInfo />
+      </div>
     </div>
   );
 }
