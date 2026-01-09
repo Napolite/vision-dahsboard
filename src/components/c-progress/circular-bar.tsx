@@ -6,6 +6,7 @@ function Circular({
   fill2,
   children = <></>,
   id,
+  track = true,
 }: {
   size: number;
   progress: number;
@@ -14,6 +15,7 @@ function Circular({
   fill2: string;
   children?: any;
   id: string;
+  track?: boolean;
 }) {
   const center = size / 2;
   const radius = center - strokeWidth / 2;
@@ -39,14 +41,16 @@ function Circular({
         </defs>
 
         {/* Track */}
-        <circle
-          cx={center}
-          cy={center}
-          r={radius}
-          fill="none"
-          stroke="#3f3f46"
-          strokeWidth={strokeWidth}
-        />
+        {track && (
+          <circle
+            cx={center}
+            cy={center}
+            r={radius}
+            fill="none"
+            stroke="#3f3f46"
+            strokeWidth={strokeWidth}
+          />
+        )}
 
         {/* Progress */}
         <circle

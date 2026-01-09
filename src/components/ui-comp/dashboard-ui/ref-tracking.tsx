@@ -30,6 +30,8 @@ function Reftracking() {
             fill1="#05CD99"
             fill2="#05CD9900"
             progress={0.63}
+            strokeWidth={10}
+            track={false}
           >
             <div className="flex flex-col items-center space-y-[10px]">
               <p className="text-[14px] text-gray-400">Safety</p>
