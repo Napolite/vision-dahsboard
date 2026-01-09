@@ -2,7 +2,7 @@ import Circular from "../../c-progress/circular-bar";
 
 function SatisfactionRate() {
   return (
-    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b2694] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-br py-[20px] px-[20px] w-[350px] backdrop-blur-lg">
+    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b2694] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-br py-[20px] px-[20px] w-[350px] backdrop-blur-lg h-[344px]">
       <div className="self-start">
         <div className="text-[#ffffff] text-[18px] font-bold">
           Satisfaction Rate
@@ -10,7 +10,13 @@ function SatisfactionRate() {
         <p className="text-gray-400 text-[14px] mb-[30px]">From all projects</p>
       </div>
       <div>
-        <Circular progress={0.75} size={212} />
+        <Circular
+          id={"satisfactionRate"}
+          progress={0.75}
+          size={212}
+          fill1="#0075FF"
+          fill2="#0075FF00"
+        />
       </div>
       <div className="flex justify-between bg-[#060B28] px-[20px] py-[10px] w-[293px] h-[82px] items-start rounded-[20px] absolute bottom-[20px]">
         <p className="text-gray-400 text-[12px]">0%</p>
