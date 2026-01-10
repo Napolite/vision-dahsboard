@@ -33,7 +33,7 @@ export const stats = [
 
 function Dashboard() {
   return (
-    <div className="pt-[30px] px-[30px]">
+    <div className="pt-[30px] px-[30px] mb-[20px]">
       <div className="grid grid-cols-4 w-full gap-x-[24px]">
         {stats.map((stat) => (
           <Tablet

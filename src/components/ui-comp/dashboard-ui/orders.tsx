@@ -15,7 +15,7 @@ const notifications = [
   {
     title: "New order #4219423",
     time: "21 Dec, 11:21 PM",
-    icon: <FaShoppingCart color="#0000ff80" size={20} />,
+    icon: <FaShoppingCart color="yellow" size={20} />,
   },
   {
     title: "Server Payments for April",
@@ -35,7 +35,7 @@ const notifications = [
   {
     title: "New Order #9851258",
     time: "18 Dec, 4:41 PM",
-    icon: <FaShoppingCart color="#0000ff80" size={20} />,
+    icon: <FaShoppingCart color="yellow" size={20} />,
   },
 ];
 
