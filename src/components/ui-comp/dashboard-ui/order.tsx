@@ -1,5 +1,3 @@
-import { FaBell } from "react-icons/fa";
-
 function Order({
   order,
 }: {

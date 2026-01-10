@@ -50,7 +50,7 @@ function ProjectTable() {
               width: "40%",
             },
             { value: 5, width: "20%" },
-            { value: 14000, width: "20%" },
+            { value: "$14,000", width: "20%" },
             {
               value: comProgress("60%"),
               width: "20%",
@@ -66,7 +66,7 @@ function ProjectTable() {
               width: "40%",
             },
             { value: 2, width: "20%" },
-            { value: 3000, width: "20%" },
+            { value: "$3,000", width: "20%" },
             { value: comProgress("10%"), width: "20%", progress: 10 },
           ],
           [
@@ -90,7 +90,7 @@ function ProjectTable() {
               width: "40%",
             },
             { value: 4, width: "20%" },
-            { value: 32000, width: "20%" },
+            { value: "$32,000", width: "20%" },
             { value: comProgress("100%"), width: "20%", progress: 100 },
           ],
           [
@@ -102,7 +102,7 @@ function ProjectTable() {
               width: "40%",
             },
             { value: 5, width: "20%" },
-            { value: 400, width: "20%" },
+            { value: "$400", width: "20%" },
             { value: comProgress("25%"), width: "20%", progress: 25 },
           ],
           [
@@ -114,7 +114,7 @@ function ProjectTable() {
               width: "40%",
             },
             { value: 2, width: "20%" },
-            { value: 7600, width: "20%" },
+            { value: "$7,600", width: "20%" },
             { value: comProgress("40%"), width: "20%", progress: 40 },
           ],
         ]}
