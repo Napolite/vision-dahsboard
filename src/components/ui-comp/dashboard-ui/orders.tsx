@@ -10,38 +10,38 @@ const notifications = [
   {
     title: "$2400, Design Changes this month",
     time: "22 Dec, 7:20 PM",
-    icon: <FaBell color="blue" />,
+    icon: <FaBell color="blue" size={20} />,
   },
   {
     title: "New order #4219423",
     time: "21 Dec, 11:21 PM",
-    icon: <FaShoppingCart />,
+    icon: <FaShoppingCart color="#0000ff80" size={20} />,
   },
   {
     title: "Server Payments for April",
     time: "21 Dec, 3:52 PM",
-    icon: <FaCss3Alt />,
+    icon: <FaCss3Alt color="#ff0000" size={20} />,
   },
   {
     title: "New Card added for order #3210145",
     time: "20 Dec, 3:52 PM",
-    icon: <IoCard />,
+    icon: <IoCard color="yellow" size={20} />,
   },
   {
     title: "Unlock packages for Development",
     time: "19 Dec, 11:35 PM",
-    icon: <SiAdobexd />,
+    icon: <SiAdobexd color={"#470137"} size={20} />,
   },
   {
     title: "New Order #9851258",
     time: "18 Dec, 4:41 PM",
-    icon: <FaShoppingCart />,
+    icon: <FaShoppingCart color="#0000ff80" size={20} />,
   },
 ];
 
 function Orders() {
   return (
-    <div className="text-[white] flex-1 flex flex-col justify-between py-[30px] px-[20.5px] w-[35%] h-full relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-b py-[20px] px-[20px] backdrop-blur-lg">
+    <div className="text-[white] flex flex-col gap-y-[35px] py-[30px] px-[30.5px] h-full relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-b py-[20px] px-[20px] backdrop-blur-lg">
       <div className="">
         <p className="text-[18px] text-[#ffffff] font-bold">orders Overview</p>
         <div className="flex gap-x-[5px] items-center">
@@ -51,7 +51,7 @@ function Orders() {
           <p className="text-[14px] text-gray-500">+30% this month</p>
         </div>
       </div>
-      <div className="flex flex-col gap-y-[20px]">
+      <div className="flex flex-col justify-between h-full">
         {notifications.map((notif) => (
           <Order order={notif} />
         ))}

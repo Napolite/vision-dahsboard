@@ -26,7 +26,7 @@ const convertLabel = (label: string, icon: any) => {
 
 function ProjectTable() {
   return (
-    <div className="text-[white] flex flex-col justify-between py-[30px] px-[20.5px] w-[65%] h-fit relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-b py-[20px] px-[20px] backdrop-blur-lg">
+    <div className="text-[white] flex flex-col justify-between py-[30px] px-[20.5px] h-fit relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-b py-[20px] px-[20px] backdrop-blur-lg">
       <div className="flex items-center justify-between w-full">
         <div className="">
           <p className="text-[18px] text-[#ffffff] font-bold">Projects</p>
