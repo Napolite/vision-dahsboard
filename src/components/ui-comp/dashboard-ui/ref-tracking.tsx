@@ -3,7 +3,7 @@ import { GoKebabHorizontal } from "react-icons/go";
 
 function Reftracking() {
   return (
-    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b26] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-b py-[20px] px-[20px] w-[551px] h-[344px] backdrop-blur-lg">
+    <div className="text-[white] flex flex-col items-center relative rounded-[20px] from-[#060b26] from-[0%] to-[#0a0e2349] to-[100%] bg-gradient-to-b py-[20px] px-[20px] w-full h-[344px] backdrop-blur-lg">
       <div className="flex w-full justify-between mb-[40px]">
         <p className="text-[18px] text-[#ffffff] font-bold">
           Referrral Tracking

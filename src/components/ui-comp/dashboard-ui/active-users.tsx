@@ -32,8 +32,8 @@ const stats = [
 
 function ActiveUsers() {
   return (
-    <div className="text-[white] flex flex-col justify-between py-[30px] px-[20.5px] w-[652px] h-[445px] relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-br py-[20px] px-[20px] backdrop-blur-lg">
-      <div className="w-[620px] h-[222px] bg-[#060c29] rounded-[20px] py-[10px]">
+    <div className="text-[white] flex flex-col justify-between py-[30px] px-[20.5px] w-full h-[445px] relative rounded-[20px] from-[#060b26] from-[0%] to-[#0A0E2371] to-[100%] bg-gradient-to-br py-[20px] px-[20px] backdrop-blur-lg">
+      <div className="w-full h-[222px] bg-[#060c29] rounded-[20px] py-[10px]">
         <BarChartExample />
       </div>
       <div>
@@ -44,7 +44,7 @@ function ActiveUsers() {
             <p className="text-[14px] text-gray-500">more than last week</p>
           </div>
         </div>
-        <div className="flex w-full justify-between mt-[20px]">
+        <div className="grid grid-cols-4 max-w-full justify-between mt-[20px] gap-x-[8px]">
           {stats?.map((stat) => (
             <div className="flex flex-col gap-y-[8px]">
               <div className="flex space-x-[10px] items-center">
@@ -53,12 +53,12 @@ function ActiveUsers() {
                 >
                   {stat?.icon}
                 </div>
-                <p className="text-gray-400 text-[14px]">{stat?.header}</p>
+                <p className="text-gray-400 text-[0.729vw]">{stat?.header}</p>
               </div>
-              <div className="text-[18px] font-bold text-[#ffffff]">
+              <div className="text-[0.938vw] font-bold text-[#ffffff]">
                 {stat?.amount}
               </div>
-              <ProgressBar width={100.5} progress={stat?.percent} />
+              <ProgressBar width={"5.234vw"} progress={stat?.percent} />
             </div>
           ))}
         </div>

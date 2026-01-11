@@ -4,10 +4,16 @@ import UserDetail from "../../components/ui-comp/dashboard-ui/user-tab";
 
 function UserInfo() {
   return (
-    <div className="flex w-full justify-between">
-      <UserDetail />
-      <SatisfactionRate />
-      <Reftracking />
+    <div className="flex justify-between w-full gap-x-[10px]">
+      <div className="w-[40%]">
+        <UserDetail />
+      </div>
+      <div className="w-[20%]">
+        <SatisfactionRate />
+      </div>
+      <div className="w-[40%]">
+        <Reftracking />
+      </div>
     </div>
   );
 }
